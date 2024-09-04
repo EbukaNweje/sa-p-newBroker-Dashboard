@@ -107,7 +107,7 @@ const Dashboard = () => {
 
     const handleLogOut = () => {
         localStorage.removeItem("UserId");
-        window.location.href = "https://www.premium-cryptassets.org/";
+        window.location.href = "https://premium-cryptassets.vercel.app/";
     };
     const handleAdmin = () => {
         window.location.href = "https://www.whitebitcrypfield.org/#/admin";
