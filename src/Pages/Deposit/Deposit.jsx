@@ -42,12 +42,12 @@ const Deposit = () => {
             setEth(false)
             setBitcoin(false)
             setbnb(false)
-            nav(`payment/DOGECOIN PAYMENT`)
+            nav(`payment/USDT Erc20`)
         } else if(bnb === true) {
             setDoge(false)
             setBitcoin(false)
             setEth(false)
-            nav(`payment/BNB PAYMENT`)
+            nav(`payment/USDT Trc20`)
         }  
     }
    
@@ -90,8 +90,8 @@ const Deposit = () => {
                                     }}
                                 />
                             </div>
-                            {/* <div className="DepositContentLeftDownInput">
-                                <span>DOGECOIN PAYMENT</span>
+                            <div className="DepositContentLeftDownInput">
+                                <span>USDT Erc20 PAYMENT</span>
                                 <input type="radio"  name="b"
                                     onChange={()=>{
                                         setBitcoin(false),
@@ -101,9 +101,9 @@ const Deposit = () => {
                                         setButtonDisabled(false)
                                     }}
                                 />
-                            </div> */}
-                            {/* <div className="DepositContentLeftDownInput">
-                                <span>BNB PAYMENT</span>
+                            </div> 
+                            <div className="DepositContentLeftDownInput">
+                                <span>USDT Trc20 PAYMENT</span>
                                 <input type="radio"  name="b"
                                     onChange={()=>{
                                         setBitcoin(false),
@@ -113,7 +113,7 @@ const Deposit = () => {
                                         setButtonDisabled(false)
                                     }}
                                 />
-                            </div> */}
+                            </div> 
                                 <button 
                                      disabled={isButtonDisabled}
                                      style={{background: `${isButtonDisabled ? "#E0E0E5" : "#0E4152"}`}}
